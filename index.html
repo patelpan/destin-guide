@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Elemental Oasis — Destin Guest Guide</title>
+<title>Elemental Oasis Destin Guide</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -172,11 +172,57 @@
   .store .smeta{font-size:.82rem;color:#5d6b66;margin-top:2px;}
   .store .sphone{font-size:.9rem;font-weight:700;color:var(--coral);margin-top:3px;letter-spacing:.01em;}
 
-  @media (max-width:680px){
+  @media screen and (max-width:680px){
     .settle-grid,.storewrap{grid-template-columns:1fr;}
   }
     header.hero{padding:48px 0 60px;}
   }
+  /* ---------- HOME HIGHLIGHTS ---------- */
+  .hilites{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--gold);border-radius:16px;padding:24px 26px 22px;margin-bottom:16px;}
+  .hilites h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.4rem;color:var(--emerald-deep);margin-bottom:16px;}
+  .hgrid{display:grid;grid-template-columns:1fr 1fr;gap:18px 28px;}
+  .hitem{display:flex;gap:12px;align-items:flex-start;}
+  .hitem .hi{flex-shrink:0;font-size:1.25rem;line-height:1.25;}
+  .hitem b{display:block;font-size:.98rem;color:var(--ink);font-weight:700;margin-bottom:3px;}
+  .hitem span.ht{display:block;font-size:.89rem;color:#5d6b66;line-height:1.45;}
+
+  /* ---------- BEACH FLAG KEY ---------- */
+  .flagkey{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--emerald);border-radius:16px;padding:24px 26px 18px;margin-top:8px;}
+  .flagkey h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.45rem;color:var(--emerald-deep);}
+  .flagkey .flagsub{font-size:.95rem;color:#5d6b66;margin:4px 0 14px;}
+  .flagrow{display:flex;align-items:center;gap:16px;padding:11px 0;border-top:1px solid var(--line);}
+  .flagrow:first-of-type{border-top:none;}
+  .flag{flex-shrink:0;width:48px;height:34px;border-radius:4px;box-shadow:0 1px 4px rgba(35,49,46,.25);}
+  .flag.green{background:#1f9d57;}
+  .flag.yellow{background:#f4c20d;}
+  .flag.red{background:#d62828;}
+  .flag.purple{background:#6a3fa0;}
+  .flag.dred{background:#fff;display:flex;flex-direction:column;justify-content:center;gap:4px;padding:4px 3px;}
+  .flag.dred i{display:block;height:10px;background:#d62828;border-radius:2px;}
+  .flagrow .ft{display:flex;flex-direction:column;line-height:1.3;}
+  .flagrow .ft b{font-size:1rem;font-weight:700;color:var(--ink);}
+  .flagrow .ft span{font-size:.92rem;color:#5d6b66;}
+
+  /* ---------- MOBILE ---------- */
+  @media screen and (max-width:760px){
+    .wrap{padding:0 18px;}
+    header.hero{padding:48px 0 56px;}
+    .grid,.seasons,.tip-grid,.storewrap,.settle-grid,.storebox .storewrap,.hgrid{grid-template-columns:1fr !important;}
+    section{padding:42px 0 6px;}
+    .tips{padding:26px 22px 22px;}
+    .flagkey{padding:22px 20px 14px;}
+  }
+  @media screen and (max-width:430px){
+    body{line-height:1.5;}
+    header.hero h1{font-size:2.15rem;}
+    .sec-head{gap:10px;}
+    .flagrow{gap:13px;}
+    .flag{width:42px;height:30px;}
+    .card h3,.storebox h3,.flagkey h3,.contact-card h3,.mapcard h3{font-size:1.12rem;}
+    .wrap{padding:0 15px;}
+    .lede{font-size:1rem;}
+  }
+
   @media print{
     body{background:#fff;}
     .card:hover{transform:none;box-shadow:none;}
@@ -192,7 +238,7 @@
   <div class="wrap">
     <div class="eyebrow">Elemental Oasis · Destiny by the Sea</div>
     <h1>Your Guide to <em>Destin</em></h1>
-    <p class="lede">Welcome to Elemental Oasis! You're in a private gated community on the Gulf, in the heart of "The World's Luckiest Fishing Village" — sugar-white sand, emerald-green water, and our hand-picked local favorites, all in one place.</p>
+    <p class="lede">Welcome to Elemental Oasis! You're in a private gated community on the Gulf, in the heart of "The World's Luckiest Fishing Village," with sugar-white sand, emerald-green water, and hand-picked local favorites all in one place.</p>
     <div class="tagchips">
       <span>10 Restaurants</span><span>10 Activities</span><span>10 Things to Do</span><span>Stores & Supplies</span><span>Season-by-Season</span>
     </div>
@@ -202,7 +248,17 @@
 <!-- ================= GETTING SETTLED ================= -->
 <section class="wrap" id="settle">
   <div class="sec-head"><span class="sec-num">01</span><h2>Getting Settled</h2></div>
-  <p class="sec-sub">A few things to know on arrival — and the quickest way to get your toes in the sand.</p>
+  <p class="sec-sub">A few things to know on arrival, plus the quickest way to get your toes in the sand.</p>
+
+  <div class="hilites">
+    <h3>Your home at Elemental Oasis</h3>
+    <div class="hgrid">
+      <div class="hitem"><span class="hi">&#128274;</span><div><b>Private gated community</b><span class="ht">Destiny by the Sea is a 24-hour guard-gated enclave on the only curve of Scenic Gulf Drive in central Destin.</span></div></div>
+      <div class="hitem"><span class="hi">&#127958;&#65039;</span><div><b>Private beach, steps away</b><span class="ht">Your own community beach access down the Conch Cay boardwalk to sugar-white sand, with chair &amp; umbrella rentals on site.</span></div></div>
+      <div class="hitem"><span class="hi">&#127946;</span><div><b>Community pool &amp; hot tub</b><span class="ht">A large lagoon-style pool (seasonally heated, lit at night) and a hot tub, beside a clubhouse with showers &amp; dressing rooms.</span></div></div>
+      <div class="hitem"><span class="hi">&#127796;</span><div><b>Resort surroundings</b><span class="ht">Palm-lined, beautifully landscaped grounds, with the Gulf, dining, and shopping all just minutes away.</span></div></div>
+    </div>
+  </div>
   <div class="settle-grid">
 
     <div class="contact-card">
@@ -210,18 +266,18 @@
       <p class="addr">at Destiny by the Sea<br>4819 Ocean Blvd, Destin, FL 32541</p>
       <div class="contact-row">
         <div class="ic">✉</div>
-        <div><div class="lbl">Need anything?</div><div class="val">Text us at <span class="num">562-528-6964</span><br>or message anytime via Airbnb / VRBO chat</div></div>
+        <div><div class="lbl">Need anything?</div><div class="val">Contact <b>Dru</b> anytime via Airbnb or VRBO chat for more information.</div></div>
       </div>
       <div class="contact-row">
         <div class="ic">⛱</div>
-        <div><div class="lbl">Gated community</div><div class="val">Stop at the guard gate on arrival to pick up your parking pass &amp; beach wristbands — keep wristbands on for beach access.</div></div>
+        <div><div class="lbl">Gated community</div><div class="val">Stop at the guard gate on arrival to pick up your parking pass &amp; beach wristbands. Keep your wristbands on for beach access.</div></div>
       </div>
     </div>
 
     <div class="mapcard">
       <h3>Walking to the Beach</h3>
-      <p class="mapsub">Head to Corinth Cay and walk south to the community's Private Beach Access &amp; rental store — about 3–4 minutes.</p>
-      <svg viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of the walk from Elemental Oasis down Corinth Cay to the private beach access">
+      <p class="mapsub">From your door: turn right on Ocean Blvd, then right onto Conch Cay and follow it all the way down to the Private Beach Access and rental store. It's about a 3-4 minute walk.</p>
+      <svg viewBox="0 0 700 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Map of the walk from Elemental Oasis down Conch Cay to the private beach access">
         <defs>
           <linearGradient id="gulf" x1="0" y1="0" x2="0" y2="1">
             <stop offset="0%" stop-color="#5bbf9e"/><stop offset="100%" stop-color="#15897a"/>
@@ -239,7 +295,7 @@
         <rect x="196" y="88" width="26" height="232" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
         <text x="209" y="210" font-family="Fraunces, serif" font-size="12.5" font-style="italic" fill="#a99f86" text-anchor="middle" transform="rotate(-90 209 210)">Varezze Cay</text>
         <rect x="392" y="88" width="30" height="262" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
-        <text x="407" y="200" font-family="Fraunces, serif" font-size="12.5" font-style="italic" fill="#a99f86" text-anchor="middle" transform="rotate(-90 407 200)">Corinth Cay</text>
+        <text x="407" y="200" font-family="Fraunces, serif" font-size="12.5" font-style="italic" fill="#a99f86" text-anchor="middle" transform="rotate(-90 407 200)">Conch Cay</text>
         <rect x="606" y="88" width="26" height="232" fill="#ffffff" stroke="#dfe4e7" stroke-width="1.5"/>
         <text x="619" y="210" font-family="Fraunces, serif" font-size="12.5" font-style="italic" fill="#a99f86" text-anchor="middle" transform="rotate(-90 619 210)">Calypso Cay</text>
         <g>
@@ -249,7 +305,7 @@
           <text x="72" y="125" font-family="Hanken Grotesk, sans-serif" font-size="14" font-weight="700" fill="#23312e">Elemental Oasis</text>
           <text x="72" y="142" font-family="Hanken Grotesk, sans-serif" font-size="11.5" fill="#7a8782">4819 Ocean Blvd (your stay)</text>
         </g>
-        <path d="M299 172 C 320 220, 380 200, 407 230 L 407 372" fill="none" stroke="#0d6e63" stroke-width="4" stroke-dasharray="2 11" stroke-linecap="round"/>
+        <path d="M299 172 L299 78 L407 78 L407 372" fill="none" stroke="#0d6e63" stroke-width="4" stroke-dasharray="2 11" stroke-linecap="round" stroke-linejoin="round"/>
         <polygon points="407,388 400,372 414,372" fill="#0d6e63"/>
         <rect x="0" y="392" width="700" height="18" fill="#f3e3c1"/>
         <rect x="0" y="410" width="700" height="30" fill="url(#gulf)"/>
@@ -258,9 +314,9 @@
         <text x="407" y="401" font-family="Hanken Grotesk, sans-serif" font-size="13" font-weight="700" fill="#0a4f48" text-anchor="middle">Private Beach Access</text>
         <text x="407" y="417" font-family="Hanken Grotesk, sans-serif" font-size="11.5" fill="#5d6b66" text-anchor="middle">+ Rental Store (chairs &amp; umbrellas)</text>
         <rect x="470" y="232" width="138" height="30" rx="15" fill="#0d6e63"/>
-        <text x="539" y="252" font-family="Hanken Grotesk, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">&#8776; 3&#8211;4 min walk</text>
+        <text x="539" y="252" font-family="Hanken Grotesk, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3-4 min walk</text>
       </svg>
-      <p class="mapnote">You can rent chairs &amp; umbrellas right at the beach access. Questions on the walk? Just text us at 562-528-6964.</p>
+      <p class="mapnote">You can rent chairs and umbrellas right at the beach access. Questions on the walk? Just message Dru via Airbnb or VRBO chat.</p>
     </div>
 
   </div>
@@ -269,7 +325,7 @@
 <!-- ================= RESTAURANTS ================= -->
 <section class="wrap" id="eat">
   <div class="sec-head"><span class="sec-num">02</span><h2>Where to Eat</h2></div>
-  <p class="sec-sub">Ten of the highest-rated tables in Destin — from dockside fish shacks to white-tablecloth date nights. Most fill up fast in season, so go early or reserve where you can.</p>
+  <p class="sec-sub">Ten of the highest-rated tables in Destin, from dockside fish shacks to white-tablecloth date nights. Most fill up fast in season, so go early or reserve where you can.</p>
   <div class="grid">
 
     <div class="card">
@@ -307,7 +363,7 @@
     <div class="card">
       <div class="top"><h3>Louisiana Lagniappe</h3><span class="pill">Cajun · waterfront</span></div>
       <div class="meta"><span class="stars">★ 4.7</span><span class="dot"></span>3,100+ reviews</div>
-      <p>Sunset-view Creole cooking with old-school service. No reservations — arrive early. Dinner only, from 4pm.</p>
+      <p>Sunset-view Creole cooking with old-school service. No reservations, so arrive early. Dinner only, from 4pm.</p>
       <span class="pick"><b>Try:</b> jambalaya · blackened shrimp · key lime pie</span>
       <span class="cphone"><span class="ph">(850) 837-0881</span></span>
     </div>
@@ -331,7 +387,7 @@
     <div class="card">
       <div class="top"><h3>Fudpucker's Beachside Bar & Grill</h3><span class="pill">Family fun</span></div>
       <div class="meta"><span class="stars">★ 4.7</span><span class="dot"></span>34,000+ reviews</div>
-      <p>A Destin institution — loud, fun, and home to Gator Beach downstairs. The kids will be entertained start to finish.</p>
+      <p>A Destin institution that's loud, fun, and home to Gator Beach downstairs. The kids will be entertained start to finish.</p>
       <span class="pick"><b>Try:</b> fried gator tail · blackened redfish · the famous gift shop</span>
       <span class="cphone"><span class="ph">(850) 654-4200</span></span>
     </div>
@@ -347,7 +403,7 @@
     <div class="card">
       <div class="top"><h3>Bistrology</h3><span class="pill">Brunch</span></div>
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>7,000+ reviews</div>
-      <p>The best breakfast/brunch around — gorgeous plates and theatrical table-side coffee. Worth the short drive to Miramar Beach.</p>
+      <p>The best breakfast and brunch around, with gorgeous plates and theatrical table-side coffee. Worth the short drive to Miramar Beach.</p>
       <span class="pick"><b>Try:</b> chicken &amp; waffles · berry pancakes · Japanese pour-over · <i>(also great: Crackings & Ruby Slipper in Destin)</i></span>
       <span class="cphone"><span class="nm">Bistrology</span> <span class="ph">(850) 757-7374</span> &#183; <span class="nm">Crackings</span> <span class="ph">(850) 650-0499</span> &#183; <span class="nm">Ruby Slipper</span> <span class="ph">(850) 660-7100</span></span>
     </div>
@@ -364,7 +420,7 @@
     <div class="card span2">
       <div class="top"><h3>Float Crab Island</h3><span class="pill">★ The signature Destin day</span></div>
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>1,700+ reviews</div>
-      <p>A shallow, emerald sandbar just inside the pass where boats anchor, music plays, and floating food/drink vendors come to you. Rent a pontoon (with or without a captain) or hop a shuttle — it's the quintessential Destin afternoon. Bring water shoes, a float, and a cooler.</p>
+      <p>A shallow, emerald sandbar just inside the pass where boats anchor, music plays, and floating food/drink vendors come to you. Rent a pontoon (with or without a captain) or hop a shuttle. It's the quintessential Destin afternoon. Bring water shoes, a float, and a cooler.</p>
       <span class="pick"><b>Tip:</b> go on a weekday morning for calmer water and fewer crowds</span>
       <span class="cphone"><span class="nm">SunVenture</span> <span class="ph">(850) 424-6465</span> &#183; <span class="nm">Crab Island Tours</span> <span class="ph">(850) 803-5466</span></span>
     </div>
@@ -413,7 +469,7 @@
       <div class="top"><h3>Sunset Sail</h3><span class="pill">Romantic</span></div>
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>1,300+ reviews</div>
       <p>The <b>Sea Blaster</b> and SunVenture cruises mix dolphins, drinks, music and a Gulf sunset. Feed the seagulls on the way out of the harbor.</p>
-      <span class="pick"><b>Tip:</b> bring a layer — evenings are breezy on the water</span>
+      <span class="pick"><b>Tip:</b> bring a layer, since evenings are breezy on the water</span>
       <span class="cphone"><span class="nm">Sea Blaster</span> <span class="ph">(850) 654-6888</span> &#183; <span class="nm">SunVenture</span> <span class="ph">(850) 424-6465</span></span>
     </div>
 
@@ -428,7 +484,7 @@
     <div class="card">
       <div class="top"><h3>Snorkel & Eco Tour</h3><span class="pill">Marine life</span></div>
       <div class="meta"><span class="stars">&#9733; 4.8</span><span class="dot"></span>guided trips</div>
-      <p>Several cruises add a snorkel stop near the jetties &mdash; calm, clear water where you'll spot fish, rays and the occasional sea turtle. A gentle option for families.</p>
+      <p>Several cruises add a snorkel stop near the jetties, in calm, clear water where you'll spot fish, rays, and the occasional sea turtle. A gentle option for families.</p>
       <span class="pick"><b>Best for:</b> first-time snorkelers &amp; little explorers</span>
       <span class="cphone"><span class="nm">AJ's</span> <span class="ph">(850) 837-2222</span> &#183; <span class="nm">Crab Island Tours</span> <span class="ph">(850) 803-5466</span></span>
     </div>
@@ -453,7 +509,7 @@
     <div class="card">
       <div class="top"><h3>HarborWalk Village</h3><span class="pill">Free to stroll</span></div>
       <div class="meta"><span class="stars">★ 4.5</span><span class="dot"></span>7,700+ reviews</div>
-      <p>The waterfront hub — shops, restaurants, live music, boat-tour booking, and seasonal fireworks. Heads-up: many vendors close in deep winter.</p>
+      <p>The waterfront hub for shops, restaurants, live music, boat-tour booking, and seasonal fireworks. Note that many vendors close in deep winter.</p>
       <span class="pick"><b>Best for:</b> evening strolls, sunset, people-watching</span>
       <span class="cphone"><span class="ph">(888) 965-7092</span></span>
     </div>
@@ -485,7 +541,7 @@
     <div class="card">
       <div class="top"><h3>Big Kahuna's Water Park</h3><span class="pill">Summer only</span></div>
       <div class="meta"><span class="stars">★ 3.9</span><span class="dot"></span>seasonal · check hours</div>
-      <p>Slides, a lazy river and wave pool. Fun on a hot day, but it's seasonal and reviews are mixed on staffing/closures — verify what's open before you go.</p>
+      <p>Slides, a lazy river and wave pool. Fun on a hot day, but it's seasonal and reviews are mixed on staffing and closures, so check what's open before you go.</p>
       <span class="pick"><b>Best for:</b> peak-summer thrill-seeking kids</span>
       <span class="cphone"><span class="ph">(850) 837-8319</span></span>
     </div>
@@ -524,9 +580,9 @@
 
     <div class="card span2">
       <div class="top"><h3>A Day on "Your" Beach (the main event)</h3><span class="pill">Free · steps away</span></div>
-      <p>Don't overschedule. The single best thing to do in Destin is the simplest: a slow beach day on the sugar-white sand outside your door — sandcastles, shelling, a swim in the warm Gulf, and a sunset you'll talk about for years. Bring an umbrella for shade; the midday sun is strong.</p>
+      <p>Don't overschedule. The single best thing to do in Destin is the simplest: a slow beach day on the sugar-white sand outside your door. Build sandcastles, hunt for shells, swim in the warm Gulf, and watch a sunset you'll talk about for years. Bring an umbrella for shade, since the midday sun is strong.</p>
       <span class="pick"><b>Tip:</b> mornings have calmer surf and the parking/sand to yourself</span>
-      <span class="cphone"><span class="nm">Beach gear:</span> rent at the Private Beach Access store, or text us <span class="ph">562-528-6964</span></span>
+      <span class="cphone"><span class="nm">Beach gear:</span> rent right at the Private Beach Access store, or message Dru via Airbnb / VRBO chat</span>
     </div>
 
   </div>
@@ -535,7 +591,7 @@
 <!-- ================= STOCK UP NEARBY ================= -->
 <section class="wrap" id="stores">
   <div class="sec-head"><span class="sec-num">05</span><h2>Stock Up Nearby</h2></div>
-  <p class="sec-sub">Groceries, beach gear, pizza delivery, coffee and ice cream — most just a few minutes west toward Destin Commons. Distances are approximate driving from Elemental Oasis.</p>
+  <p class="sec-sub">Groceries, beach gear, pizza delivery, coffee, and ice cream, most just a few minutes west toward Destin Commons. Distances are approximate driving times from Elemental Oasis.</p>
   <div class="storewrap">
 
     <div class="storebox feature">
@@ -572,7 +628,7 @@
       </div>
       <div class="store">
         <div class="sname">Tip: rent, don't buy</div>
-        <div class="smeta">For chairs + umbrella setup right on the sand, beach-service companies deliver &amp; set up daily — ask us and we'll point you to the one serving our beach.</div>
+        <div class="smeta">For chairs and umbrella setup right on the sand, beach-service companies deliver and set up daily. Message Dru and we'll point you to the one serving our beach.</div>
       </div>
     </div>
 
@@ -591,7 +647,7 @@
       </div>
       <div class="store">
         <div class="sname">Graffiti Pizza · Vinny McGuire's</div>
-        <div class="smeta">Great for takeout/dine-in — Graffiti (Destin Commons) 4.4 · Vinny McGuire's NY-style (harbor) 4.7</div>
+        <div class="smeta">Great for takeout or dine-in. Graffiti (Destin Commons) 4.4 · Vinny McGuire's NY-style (harbor) 4.7</div>
       </div>
     </div>
 
@@ -622,18 +678,18 @@
             <div class="smeta">34940 Emerald Coast Pkwy · ~2.5 mi · 11am–11pm · small-batch homemade ice cream &amp; sorbet</div>
           </div>
           <div class="store">
-            <div class="sname">Ice Cream Shoppe — Destin East</div>
+            <div class="sname">Ice Cream Shoppe, Destin East</div>
             <div class="smeta">34896 Emerald Coast Pkwy · ~2.5 mi · ★ 4.8 · big flavor wall + house fudge</div>
           </div>
         </div>
         <div>
           <div class="store" style="border-top:none;">
-            <div class="sname">Ice Cream Shoppe — on US-98</div>
+            <div class="sname">Ice Cream Shoppe on US-98</div>
             <div class="smeta">870 US-98 E · ~6 mi · ★ 4.8 · the original location, open till 11pm</div>
           </div>
           <div class="store">
             <div class="sname">The Yard Milkshake Bar</div>
-            <div class="smeta">Destin Commons · over-the-top loaded shakes (fun &amp; pricey; ★ 3.8 — go for the spectacle)</div>
+            <div class="smeta">Destin Commons · over-the-top loaded shakes (fun but pricey; ★ 3.8, go for the spectacle)</div>
           </div>
         </div>
       </div>
@@ -650,7 +706,7 @@
 
     <div class="season s-spring">
       <h3>Spring</h3>
-      <div class="when">March – May</div>
+      <div class="when">March to May</div>
       <ul>
         <li>Water warms from chilly to swimmable by May (~68–78°F)</li>
         <li>Kite Festival &amp; TurtleFest (April); free Thursday-night harbor concerts begin</li>
@@ -662,11 +718,11 @@
 
     <div class="season s-summer">
       <h3>Summer</h3>
-      <div class="when">June – August</div>
+      <div class="when">June to August</div>
       <ul>
         <li>Peak season: warmest water (~84°F) &amp; every water activity in full swing</li>
         <li>Big Kahuna's open; July 4th fireworks at the harbor</li>
-        <li>Book charters, cruises &amp; pontoons well ahead — they sell out</li>
+        <li>Book charters, cruises, and pontoons well ahead, since they sell out</li>
         <li>Expect heat, humidity &amp; brief afternoon thunderstorms (and the biggest crowds/prices)</li>
       </ul>
       <div class="vibe">Hot, busy, and the classic full-tilt beach vacation.</div>
@@ -674,24 +730,24 @@
 
     <div class="season s-fall">
       <h3>Fall</h3>
-      <div class="when">September – November</div>
+      <div class="when">September to November</div>
       <ul>
         <li>The local sweet spot: warm water lingers into October, crowds thin</li>
         <li>Destin Seafood Festival (early Oct, free) kicks off the month-long Fishing Rodeo</li>
-        <li>Daily harbor weigh-ins all October — free &amp; fun for kids</li>
+        <li>Daily harbor weigh-ins all October, free and fun for kids</li>
         <li>Shrimp &amp; Grits Festival and arts events round out the season</li>
       </ul>
-      <div class="vibe">Arguably the best time to visit — great weather, fewer people.</div>
+      <div class="vibe">Arguably the best time to visit: great weather and fewer people.</div>
     </div>
 
     <div class="season s-winter">
       <h3>Winter</h3>
-      <div class="when">December – February</div>
+      <div class="when">December to February</div>
       <ul>
         <li>Mild &amp; quiet (50s–60s°F); beaches gorgeous but too cool to swim</li>
         <li>HarborWalk holiday lights, New Year's fireworks &amp; ball drop, boat parade</li>
         <li>Mardi Gras parade on the island (Feb); 30A Songwriters Festival in Jan</li>
-        <li>Best deals and no restaurant waits — bundle up for sunset cruises</li>
+        <li>Best deals and no restaurant waits. Bundle up for sunset cruises</li>
       </ul>
       <div class="vibe">Calm, festive, and a great-value getaway for couples &amp; snowbirds.</div>
     </div>
@@ -701,15 +757,25 @@
 
 <!-- ================= TIPS ================= -->
 <section class="wrap">
+  <div class="sec-head"><span class="sec-num" style="color:var(--gold);">★</span><h2>Good to Know</h2></div>
+
+  <div class="flagkey">
+    <h3>Beach Flag Guide</h3>
+    <p class="flagsub">Check the flag flying at the lifeguard stand before you get in the water.</p>
+    <div class="flagrow"><span class="flag green"></span><div class="ft"><b>Green</b><span>Calm water. Swim with normal care.</span></div></div>
+    <div class="flagrow"><span class="flag yellow"></span><div class="ft"><b>Yellow</b><span>Moderate surf or currents. Use caution.</span></div></div>
+    <div class="flagrow"><span class="flag red"></span><div class="ft"><b>Red</b><span>High hazard. Strong surf and rip currents.</span></div></div>
+    <div class="flagrow"><span class="flag dred"><i></i><i></i></span><div class="ft"><b>Double Red</b><span>Water closed to the public. Stay out.</span></div></div>
+    <div class="flagrow"><span class="flag purple"></span><div class="ft"><b>Purple</b><span>Dangerous marine life, such as jellyfish.</span></div></div>
+  </div>
+
   <div class="tips">
-    <div class="sec-head"><span class="sec-num" style="color:var(--gold);">★</span><h2>Good to Know</h2></div>
     <div class="tip-grid">
-      <div class="tip"><h4>Book ahead in season</h4><p>Charters, dolphin cruises and pontoons fill up days out from May–August and on October weekends. Reserve early.</p></div>
-      <div class="tip"><h4>Beach flag colors</h4><p>Watch the lifeguard flags: green/yellow = caution, <b>red = dangerous surf</b>, <b>double red = water closed</b>, purple = marine life. When in doubt, stay out.</p></div>
+      <div class="tip"><h4>Book ahead in season</h4><p>Charters, dolphin cruises, and pontoons fill up days out from May to August and on October weekends, so reserve early.</p></div>
       <div class="tip"><h4>Sun is no joke</h4><p>The reflection off white sand is intense. Reef-safe sunscreen, an umbrella, and water are essentials even on cloudy days.</p></div>
-      <div class="tip"><h4>"Hook & Cook"</h4><p>Several restaurants (like Brotula's) will cook the fish you catch on a charter — a memorable, money-saving dinner.</p></div>
-      <div class="tip"><h4>Getting around</h4><p>US-98 is the main strip and backs up in summer. Build in extra time, and consider the bay/Mid-Bay bridge to skip traffic.</p></div>
-      <div class="tip"><h4>Cash for tips</h4><p>Boat crews, parasail and pontoon staff work hard for tips — bring a little cash to thank a great guide.</p></div>
+      <div class="tip"><h4>"Hook & Cook"</h4><p>Several restaurants, like Brotula's, will cook the fish you catch on a charter for a memorable, money-saving dinner.</p></div>
+      <div class="tip"><h4>Getting around</h4><p>US-98 is the main strip and backs up in summer. Build in extra time, and consider the bay or Mid-Bay bridge to skip traffic.</p></div>
+      <div class="tip"><h4>Cash for tips</h4><p>Boat crews, parasail, and pontoon staff work hard for tips, so bring a little cash to thank a great guide.</p></div>
     </div>
   </div>
 </section>
@@ -717,8 +783,8 @@
 <footer>
   <div class="wrap">
     <div class="mark">Enjoy your stay at Elemental Oasis</div>
-    <p style="margin-bottom:8px;">Questions or need a hand? Text <b style="color:var(--coral);">562-528-6964</b> or message us through Airbnb / VRBO chat.</p>
-    <p>Ratings &amp; details reflect publicly available reviews at the time of writing and can change — please confirm hours, prices and seasonal openings directly before you go.</p>
+    <p style="margin-bottom:8px;">Questions or need a hand? Contact <b style="color:var(--coral);">Dru</b> via Airbnb or VRBO chat for more information.</p>
+    <p>Ratings and details reflect publicly available reviews at the time of writing and can change, so please confirm hours, prices, and seasonal openings before you go.</p>
   </div>
 </footer>
 
