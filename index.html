@@ -279,7 +279,7 @@
   .iconnav a{text-decoration:none;text-align:center;color:#073f47;font-weight:700;font-size:.94rem;}
   .iconnav span{display:block;font-size:2rem;color:var(--emerald);line-height:1;margin-bottom:9px;}
   section.wrap{padding-top:24px;}
-  details.accordion{background:transparent;margin:14px 0 8px;padding:0;}
+  details.accordion{background:transparent;margin:14px 0 8px;padding:0;scroll-margin-top:16px;}
   details.accordion summary{background:rgba(255,253,248,.88);border:1px solid rgba(196,176,145,.72);border-radius:14px;box-shadow:0 8px 24px rgba(10,79,72,.06);padding:20px 28px;margin:0 0 22px;display:grid;grid-template-columns:78px 46px minmax(0,1fr) 42px;align-items:center;gap:20px;}
   details.accordion summary::after{content:'⌄';grid-column:4;font-size:3rem;color:#073f47;line-height:1;justify-self:end;}
   details.accordion[open] summary::after{transform:rotate(180deg);}
@@ -1023,5 +1023,17 @@
   </div>
 </footer>
 
+<script>
+  // When a category is opened, bring its heading to the top so guests start at the beginning of that section.
+  document.querySelectorAll('details.accordion').forEach(function(d){
+    d.addEventListener('toggle', function(){
+      if (d.open) {
+        requestAnimationFrame(function(){
+          d.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        });
+      }
+    });
+  });
+</script>
 </body>
 </html>
