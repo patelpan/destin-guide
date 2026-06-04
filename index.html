@@ -174,7 +174,6 @@
 
   @media screen and (max-width:680px){
     .settle-grid,.storewrap{grid-template-columns:1fr;}
-  }
     header.hero{padding:48px 0 60px;}
   }
   /* ---------- HOME HIGHLIGHTS ---------- */
@@ -315,15 +314,29 @@
   .beachrent{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--coral);border-radius:16px;padding:24px 26px 22px;margin-top:16px;}
   .beachrent h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.4rem;color:var(--emerald-deep);margin-bottom:6px;}
   .beachrent .intro{font-size:.95rem;color:#46524e;margin-bottom:16px;}
-  .brcols{display:grid;grid-template-columns:1.1fr 1fr;gap:22px 30px;align-items:start;}
+  .brimg{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px;}
   .brrates{font-size:.92rem;color:#46524e;}
   .brrates h4{font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--coral);font-weight:700;margin:14px 0 5px;}
   .brrates h4:first-child{margin-top:0;}
   .brrates .rate{display:flex;justify-content:space-between;gap:14px;padding:3px 0;border-bottom:1px dotted var(--line);}
   .brrates .rate span:last-child{font-weight:700;color:var(--emerald-deep);white-space:nowrap;}
   .brrates .brnote{font-size:.8rem;color:#8a958f;margin-top:12px;border:0;}
-  .brimg img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block;margin-bottom:12px;}
-  @media screen and (max-width:760px){.brcols{grid-template-columns:1fr;}}
+  .brimg img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block;}
+  .home-photo{width:100%;height:auto;border-radius:12px;margin-top:16px;display:block;}
+  .tip.thanks{grid-column:1 / -1;text-align:center;margin-top:8px;}
+  .tip.thanks h4{color:var(--coral);font-size:1.95rem;line-height:1.15;margin-bottom:6px;}
+  .tip.thanks .heart{font-size:1.3em;}
+  .tip.thanks p{font-size:1.12rem;color:#eaf5f2;}
+  @media screen and (max-width:760px){.brimg{grid-template-columns:1fr;}}
+
+  /* ---------- BEACH RULES ---------- */
+  .rules{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--emerald);border-radius:16px;padding:24px 26px 20px;margin-top:16px;}
+  .rules h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.4rem;color:var(--emerald-deep);}
+  .rules .rulesub{font-size:.92rem;color:#5d6b66;margin:4px 0 14px;}
+  .rulelist{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:9px 28px;margin:0;padding:0;}
+  .rulelist li{font-size:.9rem;color:#46524e;padding-left:18px;position:relative;line-height:1.45;}
+  .rulelist li::before{content:"";position:absolute;left:0;top:.5em;width:7px;height:7px;border-radius:2px;background:var(--coral);}
+  @media screen and (max-width:760px){.rulelist{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
@@ -344,12 +357,9 @@
       <p class="lede">You're in a private gated community on the Gulf, in the heart of <b>“The World's Luckiest Fishing Village,”</b> with sugar-white sand, emerald-green water, and hand-picked local favorites all in one place.</p>
     </div>
 
-    <aside class="hero-contact" aria-label="Guest contact information">
-      <h3>Need anything?</h3>
-      <p>Contact Dru anytime.</p>
-      <a class="contact-phone" href="tel:15625286964">☎ 562-528-6964</a>
-      <div class="chat-line">💬 Airbnb / VRBO Chat</div>
-      <p class="smallhelp">We're happy to help!</p>
+    <aside class="hero-contact" aria-label="Guest guide download">
+      <h3>Your Guest Guide</h3>
+      <p class="smallhelp">Everything for your stay in one place. Save it or print it.</p>
       <a class="pdfbtn" href="./guest-guide.pdf" target="_blank" rel="noopener">↧ View / Download<br>Full Guest Guide (PDF)</a>
     </aside>
   </div>
@@ -365,7 +375,7 @@
 
 <!-- ================= GETTING SETTLED ================= -->
 <section class="wrap" id="settle">
-  <details class="accordion">
+  <details class="accordion" name="guide">
     <summary><span class="acc-icon">⌂</span><span class="sec-num">01</span><div class="sec-head"><h2>Getting Settled</h2><div class="summary-desc">A few things to know on arrival, plus the quickest way to get your toes in the sand.</div></div></summary>
 
   <div class="hilites">
@@ -386,6 +396,7 @@
         <div class="ic">✦</div>
         <div><div class="lbl">Welcome</div><div class="val">We hope you love your stay. Check-out and house details are posted inside the home.</div></div>
       </div>
+      <img class="home-photo" src="elemental-oasis-home.jpg" alt="Elemental Oasis at 4819 Ocean Blvd">
     </div>
 
     <div class="mapcard">
@@ -437,9 +448,8 @@
 
   <div class="beachrent">
     <h3>Beach Gear &amp; Shave Ice at the Private Beach</h3>
-    <p class="intro">Your private beach access has an on-site stall run by <b>Sun, Sand &amp; Sea Beach Service</b>. Rent chairs, umbrellas, boogie boards, kayaks, and paddleboards from the beach attendant, and grab shave ice while you're there. Rental hours are 9:00am to 5:00pm, and all prices include sales tax.</p>
-    <div class="brcols">
-      <div class="brrates">
+    <p class="intro">Your private beach access has an on-site stall run by <b>Sun, Sand &amp; Sea Beach Service</b>. Rent chairs, umbrellas, boogie boards, kayaks, and paddleboards from the beach attendant, and grab shave ice while you're there. Rental hours are 9:00am to 5:00pm, seven days a week from March through October, and all prices include sales tax. To reserve, call <a href="tel:18506508988">850-650-8988</a> or see the beach attendant at the central beach access.</p>
+    <div class="brrates">
         <h4>Chair &amp; umbrella set-up (2 chairs + 1 umbrella)</h4>
         <div class="rate"><span>Half day (9-1 or 1-5)</span><span>$30</span></div>
         <div class="rate"><span>Full day</span><span>$45</span></div>
@@ -453,12 +463,11 @@
         <div class="rate"><span>Boogie board</span><span>$8/hr, $20/day</span></div>
         <div class="rate"><span>Kayak, single / double</span><span>$20 / $25 per hr</span></div>
         <div class="rate"><span>Paddleboard</span><span>$35/hr, $100/4hr, $180/day</span></div>
-        <p class="brnote">More at beachingdestin.com. Prices may change, so confirm with the attendant.</p>
+        <p class="brnote">Full details and payment options (cash, check, Visa, Mastercard) at <a href="https://beachingdestin.com" target="_blank" rel="noopener">beachingdestin.com</a>. Prices may change, so confirm with the attendant.</p>
       </div>
-      <div class="brimg">
-        <img src="beach-rental-stall.jpg" alt="Sun, Sand and Sea beach rental and shave ice stall at the private beach access">
-        <img src="beach-rental-rates.jpg" alt="Sun, Sand and Sea Beach Service printed rental rate sheet">
-      </div>
+    <div class="brimg">
+      <img src="beach-rental-stall.jpg" alt="Sun, Sand and Sea beach rental and shave ice stall at the private beach access">
+      <img src="beach-rental-rates.jpg" alt="Sun, Sand and Sea Beach Service printed rental rate sheet">
     </div>
   </div>
   </details>
@@ -466,7 +475,7 @@
 
 <!-- ================= RESTAURANTS ================= -->
 <section class="wrap" id="eat">
-  <details class="accordion">
+  <details class="accordion" name="guide">
     <summary><span class="acc-icon">🍽</span><span class="sec-num">02</span><div class="sec-head"><h2>Where to Eat</h2><div class="summary-desc">Ten of the highest-rated restaurants in Destin, from dockside fish shacks to white-tablecloth date nights.</div></div></summary>
   <div class="grid">
 
@@ -567,7 +576,7 @@
 
 <!-- ================= ACTIVITIES ================= -->
 <section class="wrap" id="do">
-  <details class="accordion">
+  <details class="accordion" name="guide">
     <summary><span class="acc-icon">⛵</span><span class="sec-num">03</span><div class="sec-head"><h2>On the Water & Outdoors</h2><div class="summary-desc">The best adventures on the Gulf and in the harbor, from dolphin cruises and Crab Island to fishing and snorkeling.</div></div></summary>
   <div class="grid">
 
@@ -668,7 +677,7 @@
 
 <!-- ================= THINGS TO DO ================= -->
 <section class="wrap" id="family">
-  <details class="accordion">
+  <details class="accordion" name="guide">
     <summary><span class="acc-icon">👨‍👩‍👧</span><span class="sec-num">04</span><div class="sec-head"><h2>For Adults & Kids</h2><div class="summary-desc">Attractions, mini golf, arcades, shows and kid-friendly fun for all ages.</div></div></summary>
   <div class="grid">
 
@@ -768,7 +777,7 @@
 
 <!-- ================= STOCK UP NEARBY ================= -->
 <section class="wrap" id="stores">
-  <details class="accordion">
+  <details class="accordion" name="guide">
     <summary><span class="acc-icon">🛒</span><span class="sec-num">05</span><div class="sec-head"><h2>Stock Up Nearby</h2><div class="summary-desc">Groceries, beach gear, pharmacy, and everything else you need, all close to home.</div></div></summary>
   <div class="storewrap">
 
@@ -900,7 +909,7 @@
 
 
 <section class="wrap" id="seasons">
-  <details class="accordion">
+  <details class="accordion" name="guide">
     <summary><span class="acc-icon">☼</span><span class="sec-num">06</span><div class="sec-head"><h2>Season-by-Season</h2><div class="summary-desc">What to expect in Destin all year long, plus our favorite times to visit.</div></div></summary>
   <div class="seasons">
 
@@ -957,8 +966,9 @@
 </section>
 
 <!-- ================= TIPS ================= -->
-<section class="wrap">
-  <div class="sec-head"><span class="sec-num" style="color:var(--gold);">★</span><h2>Good to Know</h2></div>
+<section class="wrap" id="good">
+  <details class="accordion" name="guide">
+    <summary><span class="acc-icon">★</span><span class="sec-num">07</span><div class="sec-head"><h2>Good to Know</h2><div class="summary-desc">Beach flag guide, beach rules, and handy local tips.</div></div></summary>
 
   <div class="flagkey">
     <h3>Beach Flag Guide</h3>
@@ -971,6 +981,25 @@
     <p class="flagsub" style="margin-top:16px;margin-bottom:0;">Check the current Destin beach flag warning before you head out at <a href="https://destinmiramar.com/weather/" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700;">destinmiramar.com/weather</a>.</p>
   </div>
 
+  <div class="rules">
+    <h3>Beach Rules</h3>
+    <p class="rulesub">Destiny by the Sea is a private beach. A few key rules keep it great for everyone. The full association and county list is linked below.</p>
+    <ul class="rulelist">
+      <li>Use the community beach walkovers only and protect the dunes. No parking by the walkovers.</li>
+      <li>Personal tents, canopies, tarps, and umbrellas are not allowed, including baby tents. Rent gear from the on-site attendant instead.</li>
+      <li>No dogs on the beach (Okaloosa County Ordinance 77-19).</li>
+      <li>No bonfires (Okaloosa County Ordinance 79-41).</li>
+      <li>No glass on the beach.</li>
+      <li>Fill in any holes before you leave to help protect nesting sea turtles.</li>
+      <li>Keep music low so your beach neighbors can enjoy theirs too.</li>
+      <li>Set up games behind your home or near an access point without blocking others, and watch for people when tossing balls or frisbees.</li>
+      <li>Alcohol is allowed, but underage drinking is not.</li>
+      <li>Use the trash receptacles along the beach.</li>
+      <li>Respect gulf-front owners' privacy and move if asked, since they have rights to the wet-sand line when in residence.</li>
+    </ul>
+    <p class="rulesub" style="margin-top:14px;margin-bottom:0;">Full beach &amp; property rules: <a href="https://beachingdestin.com/locations/destiny-by-the-sea/" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700;">beachingdestin.com/locations/destiny-by-the-sea</a></p>
+  </div>
+
   <div class="tips">
     <div class="tip-grid">
       <div class="tip"><h4>Book ahead in season</h4><p>Charters, dolphin cruises, and pontoons fill up days out from May to August and on October weekends, so reserve early.</p></div>
@@ -978,8 +1007,10 @@
       <div class="tip"><h4>"Hook & Cook"</h4><p>Several restaurants, like Brotula's, will cook the fish you catch on a charter for a memorable, money-saving dinner.</p></div>
       <div class="tip"><h4>Getting around</h4><p>US-98 is the main strip and backs up in summer. Build in extra time, and consider the bay or Mid-Bay bridge to skip traffic.</p></div>
       <div class="tip"><h4>Cash for tips</h4><p>Boat crews, parasail, and pontoon staff work hard for tips, so bring a little cash to thank a great guide.</p></div>
+      <div class="tip thanks"><h4>Thank you <span class="heart">&#9825;</span></h4><p>We're so glad you chose Elemental Oasis. Have a wonderful stay!</p></div>
     </div>
   </div>
+  </details>
 </section>
 
 
