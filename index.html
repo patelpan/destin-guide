@@ -230,25 +230,143 @@
     section{padding:26px 0 4px;break-inside:avoid;}
     .card,.storebox,.contact-card,.mapcard{break-inside:avoid;}
   }
+
+  /* ---------- BRAND LOGO + ACCORDION + PRICE INFO ---------- */
+  .brand-logo{width:132px;height:132px;border-radius:50%;object-fit:cover;background:#fffdf8;border:3px solid rgba(255,255,255,.72);box-shadow:0 14px 34px -18px rgba(0,0,0,.65);margin-bottom:18px;}
+  .brandline{margin-top:10px;font-size:.86rem;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#dff0ec;}
+  details.accordion{padding:0 0 8px;}
+  details.accordion summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:0 0 12px;margin-bottom:20px;}
+  details.accordion summary::-webkit-details-marker{display:none;}
+  details.accordion summary::after{content:'⌄';font-size:1.8rem;line-height:1;color:var(--coral);transition:transform .18s ease;}
+  details.accordion[open] summary::after{transform:rotate(180deg);}
+  details.accordion .sec-head{margin-bottom:0;}
+  .price{display:block;margin-top:8px;font-size:.82rem;color:var(--emerald-deep);font-weight:700;}
+  .pdfbtn{display:inline-block;margin-top:18px;background:var(--paper);color:var(--emerald-deep);font-weight:800;text-decoration:none;border-radius:999px;padding:10px 16px;border:1px solid rgba(255,255,255,.65);}
+
+
+
+  /* ---------- POLISHED PRESENTATION STYLE UPDATE ---------- */
+  body{background:linear-gradient(180deg,#f8f1e6 0%,#fffaf1 52%,#f6efe2 100%);} 
+  .wrap{max-width:1120px;}
+  header.hero{
+    color:var(--ink);padding:42px 0 38px;overflow:hidden;
+    background:
+      linear-gradient(180deg,rgba(255,255,255,.25),rgba(255,250,241,.92) 73%),
+      radial-gradient(circle at 82% 12%,rgba(20,120,115,.18),transparent 22%),
+      linear-gradient(180deg,#bfe8f5 0%,#dff4f6 32%,#a8e2dc 33%,#edf5ef 47%,#f5e5c8 67%,#fffaf1 100%);
+    border-bottom:1px solid rgba(196,176,145,.55);
+  }
+  header.hero::before{content:"";position:absolute;left:-8%;right:-8%;top:235px;height:120px;background:linear-gradient(180deg,rgba(18,132,128,.38),rgba(255,255,255,.5));clip-path:polygon(0 35%,18% 50%,35% 38%,52% 54%,69% 40%,85% 51%,100% 35%,100% 100%,0 100%);}
+  header.hero::after{display:none;}
+  .hero-wrap{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:34px;align-items:center;z-index:1;}
+  .brand-lockup{display:flex;align-items:center;gap:28px;margin-bottom:26px;}
+  .brand-logo{width:160px;height:160px;border-radius:50%;object-fit:cover;background:#fff;box-shadow:0 16px 36px rgba(10,79,72,.18);border:2px solid rgba(255,255,255,.9);margin:0;}
+  .brand-text{color:#083f48;text-align:left;letter-spacing:.1em;line-height:1;}
+  .brand-title-small{font-family:'Fraunces',serif;font-size:clamp(2.2rem,4.3vw,4rem);font-weight:500;letter-spacing:.09em;}
+  .brand-title-large{font-family:'Fraunces',serif;font-size:clamp(3.4rem,7vw,6.7rem);font-weight:500;color:var(--emerald);letter-spacing:.16em;margin-top:2px;}
+  .brand-presented{display:flex;align-items:center;gap:10px;font-size:.84rem;font-weight:800;letter-spacing:.28em;margin-top:6px;}
+  .brand-presented span{display:block;height:1px;background:#083f48;flex:1;min-width:42px;}
+  .brand-place{font-size:.78rem;font-weight:800;letter-spacing:.35em;margin-top:10px;}
+  header.hero h1{font-size:clamp(1.8rem,3.2vw,2.7rem);line-height:1.14;color:#083f48;margin-top:8px;}
+  .lede{max-width:690px;color:#143e43;font-size:1.12rem;line-height:1.7;}
+  .hero-contact{background:rgba(255,253,248,.94);border:1px solid rgba(196,176,145,.72);border-radius:18px;box-shadow:0 18px 42px rgba(10,79,72,.2);padding:28px 28px 0;text-align:center;overflow:hidden;}
+  .hero-contact h3{text-transform:uppercase;letter-spacing:.08em;color:var(--emerald-deep);font-size:1rem;margin-bottom:4px;}
+  .hero-contact p{color:#445450;}
+  .contact-phone{display:block;color:var(--emerald);font-size:1.45rem;font-weight:800;text-decoration:none;margin:16px 0 12px;}
+  .chat-line{font-weight:800;color:#153d42;font-size:1.08rem;margin-bottom:8px;}
+  .smallhelp{font-size:.92rem;margin-bottom:18px;}
+  .pdfbtn{display:block;background:linear-gradient(135deg,#037169,#00574f);color:#fff!important;text-decoration:none;border-radius:10px 10px 0 0;margin:0 -28px;padding:18px 20px;font-weight:900;text-transform:uppercase;letter-spacing:.04em;line-height:1.35;border:0;}
+  .iconnav{position:relative;z-index:2;display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin-top:36px;}
+  .iconnav a{text-decoration:none;text-align:center;color:#073f47;font-weight:700;font-size:.94rem;}
+  .iconnav span{display:block;font-size:2rem;color:var(--emerald);line-height:1;margin-bottom:9px;}
+  section.wrap{padding-top:24px;}
+  details.accordion{background:transparent;margin:14px 0 8px;padding:0;}
+  details.accordion summary{background:rgba(255,253,248,.88);border:1px solid rgba(196,176,145,.72);border-radius:14px;box-shadow:0 8px 24px rgba(10,79,72,.06);padding:20px 28px;margin:0 0 22px;display:grid;grid-template-columns:78px 46px minmax(0,1fr) 42px;align-items:center;gap:20px;}
+  details.accordion summary::after{content:'⌄';grid-column:4;font-size:3rem;color:#073f47;line-height:1;justify-self:end;}
+  details.accordion[open] summary::after{transform:rotate(180deg);}
+  details.accordion summary .acc-icon{width:68px;height:68px;border-radius:50%;background:linear-gradient(145deg,#006d65,#004d48);border:3px solid #fff;box-shadow:0 0 0 2px #006d65;display:grid;place-items:center;color:#fff;font-size:2rem;}
+  details.accordion summary .sec-num{font-size:1.95rem;color:#f06f4f;font-style:normal;margin:0;}
+  details.accordion summary .sec-head{display:block;margin:0;}
+  details.accordion summary h2{font-size:clamp(1.65rem,3vw,2.15rem);margin:0;color:#07524c;}
+  details.accordion summary .summary-desc{font-size:.95rem;color:#445450;margin-top:4px;max-width:680px;}
+  .grid{gap:18px;}
+  .card,.storebox,.contact-card,.mapcard,.hilites,.flagkey{border-color:rgba(196,176,145,.72);box-shadow:0 8px 24px rgba(10,79,72,.05);}
+  .card{border-radius:16px;padding:20px 22px;}
+  .pill{background:#edf4ef;color:#07524c;}
+  .price{background:#f8efe2;border-left:4px solid var(--gold);border-radius:8px;padding:7px 10px;color:#07524c;margin-top:11px;}
+  .hilites{display:none;}
+  .settle-grid{grid-template-columns:1fr 1.35fr;margin-top:6px;}
+  .contact-card{border-top:0;background:#fffdf8;}
+  .contact-row .ic{background:#e8f4f0;color:var(--emerald);}
+  .seasons{margin-top:0;}
+  .tips{background:linear-gradient(135deg,#006c64,#004d48);border-radius:14px;}
+  footer{background:linear-gradient(135deg,#006c64,#004d48);color:#fff;margin-top:28px;padding:24px 0;}
+  footer .mark{color:#fff;}
+  @media screen and (max-width:900px){.hero-wrap{grid-template-columns:1fr}.hero-contact{max-width:420px}.iconnav{grid-template-columns:repeat(3,1fr)}.brand-lockup{gap:18px}.brand-logo{width:120px;height:120px}}
+  @media screen and (max-width:680px){.brand-lockup{flex-direction:column;text-align:center}.brand-text{text-align:center}.brand-title-large{letter-spacing:.1em}.brand-place{letter-spacing:.16em}.iconnav{grid-template-columns:repeat(2,1fr)}details.accordion summary{grid-template-columns:54px minmax(0,1fr) 32px;gap:14px;padding:16px}details.accordion summary .acc-icon{width:48px;height:48px;font-size:1.45rem}details.accordion summary .sec-num{display:none}details.accordion summary::after{grid-column:3;font-size:2.3rem}details.accordion summary .sec-head{grid-column:2}.hero-contact{padding:22px 22px 0}.pdfbtn{margin:0 -22px}.contact-phone{font-size:1.25rem}}
+
+
+  .reminder-bar{display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(135deg,#006c64,#004d48);color:#fff;border-radius:14px;padding:22px 28px!important;margin-top:26px;}
+  .reminder-bar strong{text-transform:uppercase;letter-spacing:.04em;font-size:1.15rem;}
+  .reminder-bar em{font-family:'Fraunces',serif;font-size:1.9rem;white-space:nowrap;}
+  @media screen and (max-width:680px){.reminder-bar{display:block}.reminder-bar em{display:block;margin-top:12px}}
+
+  /* ---------- BEACH RENTAL BLOCK ---------- */
+  .beachrent{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--coral);border-radius:16px;padding:24px 26px 22px;margin-top:16px;}
+  .beachrent h3{font-family:'Fraunces',serif;font-weight:600;font-size:1.4rem;color:var(--emerald-deep);margin-bottom:6px;}
+  .beachrent .intro{font-size:.95rem;color:#46524e;margin-bottom:16px;}
+  .brcols{display:grid;grid-template-columns:1.1fr 1fr;gap:22px 30px;align-items:start;}
+  .brrates{font-size:.92rem;color:#46524e;}
+  .brrates h4{font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--coral);font-weight:700;margin:14px 0 5px;}
+  .brrates h4:first-child{margin-top:0;}
+  .brrates .rate{display:flex;justify-content:space-between;gap:14px;padding:3px 0;border-bottom:1px dotted var(--line);}
+  .brrates .rate span:last-child{font-weight:700;color:var(--emerald-deep);white-space:nowrap;}
+  .brrates .brnote{font-size:.8rem;color:#8a958f;margin-top:12px;border:0;}
+  .brimg img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block;margin-bottom:12px;}
+  @media screen and (max-width:760px){.brcols{grid-template-columns:1fr;}}
 </style>
 </head>
 <body>
 
 <header class="hero">
-  <div class="wrap">
-    <div class="eyebrow">Elemental Oasis · Destiny by the Sea</div>
-    <h1>Your Guide to <em>Destin</em></h1>
-    <p class="lede">Welcome to Elemental Oasis! You're in a private gated community on the Gulf, in the heart of "The World's Luckiest Fishing Village," with sugar-white sand, emerald-green water, and hand-picked local favorites all in one place.</p>
-    <div class="tagchips">
-      <span>10 Restaurants</span><span>10 Activities</span><span>10 Things to Do</span><span>Stores & Supplies</span><span>Season-by-Season</span>
+  <div class="wrap hero-wrap">
+    <div class="hero-main">
+      <div class="brand-lockup">
+        <img class="brand-logo" src="elemental-oasis-logo.jpg" alt="Elemental Oasis logo">
+        <div class="brand-text">
+          <div class="brand-title-small">ELEMENTAL</div>
+          <div class="brand-title-large">OASIS</div>
+          <div class="brand-presented"><span></span>PRESENTED BY DRU<span></span></div>
+          <div class="brand-place">DESTINY BY THE SEA · DESTIN, FL</div>
+        </div>
+      </div>
+      <h1>Welcome to Your Coastal Escape!</h1>
+      <p class="lede">You're in a private gated community on the Gulf, in the heart of <b>“The World's Luckiest Fishing Village,”</b> with sugar-white sand, emerald-green water, and hand-picked local favorites all in one place.</p>
     </div>
+
+    <aside class="hero-contact" aria-label="Guest contact information">
+      <h3>Need anything?</h3>
+      <p>Contact Dru anytime.</p>
+      <a class="contact-phone" href="tel:15625286964">☎ 562-528-6964</a>
+      <div class="chat-line">💬 Airbnb / VRBO Chat</div>
+      <p class="smallhelp">We're happy to help!</p>
+      <a class="pdfbtn" href="./guest-guide.pdf" target="_blank" rel="noopener">↧ View / Download<br>Full Guest Guide (PDF)</a>
+    </aside>
   </div>
+  <nav class="wrap iconnav" aria-label="Guide sections">
+    <a href="#settle"><span>⌂</span>Getting Settled</a>
+    <a href="#eat"><span>♨</span>Where to Eat</a>
+    <a href="#do"><span>⛵</span>On the Water & Outdoors</a>
+    <a href="#family"><span>👨‍👩‍👧</span>For Adults & Kids</a>
+    <a href="#stores"><span>🛒</span>Stock Up Nearby</a>
+    <a href="#seasons"><span>☼</span>Season-by-Season</a>
+  </nav>
 </header>
 
 <!-- ================= GETTING SETTLED ================= -->
 <section class="wrap" id="settle">
-  <div class="sec-head"><span class="sec-num">01</span><h2>Getting Settled</h2></div>
-  <p class="sec-sub">A few things to know on arrival, plus the quickest way to get your toes in the sand.</p>
+  <details class="accordion">
+    <summary><span class="acc-icon">⌂</span><span class="sec-num">01</span><div class="sec-head"><h2>Getting Settled</h2><div class="summary-desc">A few things to know on arrival, plus the quickest way to get your toes in the sand.</div></div></summary>
 
   <div class="hilites">
     <h3>Your home at Elemental Oasis</h3>
@@ -265,12 +383,8 @@
       <h3>Elemental Oasis</h3>
       <p class="addr">at Destiny by the Sea<br>4819 Ocean Blvd, Destin, FL 32541</p>
       <div class="contact-row">
-        <div class="ic">✉</div>
-        <div><div class="lbl">Need anything?</div><div class="val">Contact <b>Dru</b> anytime via Airbnb or VRBO chat for more information.</div></div>
-      </div>
-      <div class="contact-row">
-        <div class="ic">⛱</div>
-        <div><div class="lbl">Gated community</div><div class="val">Stop at the guard gate on arrival to pick up your parking pass &amp; beach wristbands. Keep your wristbands on for beach access.</div></div>
+        <div class="ic">✦</div>
+        <div><div class="lbl">Welcome</div><div class="val">We hope you love your stay. Check-in and house details are posted inside the home.</div></div>
       </div>
     </div>
 
@@ -316,16 +430,44 @@
         <rect x="470" y="232" width="138" height="30" rx="15" fill="#0d6e63"/>
         <text x="539" y="252" font-family="Hanken Grotesk, sans-serif" font-size="13" font-weight="700" fill="#ffffff" text-anchor="middle">3-4 min walk</text>
       </svg>
-      <p class="mapnote">You can rent chairs and umbrellas right at the beach access. Questions on the walk? Just message Dru via Airbnb or VRBO chat.</p>
+      <p class="mapnote">Beach gear can be rented on-site at the private beach access from Sun, Sand &amp; Sea Beach Service, which also sells shave ice. See rates just below.</p>
     </div>
 
   </div>
+
+  <div class="beachrent">
+    <h3>Beach Gear &amp; Shave Ice at the Private Beach</h3>
+    <p class="intro">Your private beach access has an on-site stall run by <b>Sun, Sand &amp; Sea Beach Service</b>. Rent chairs, umbrellas, boogie boards, kayaks, and paddleboards from the beach attendant, and grab shave ice while you're there. Rental hours are 9:00am to 5:00pm, and all prices include sales tax.</p>
+    <div class="brcols">
+      <div class="brrates">
+        <h4>Chair &amp; umbrella set-up (2 chairs + 1 umbrella)</h4>
+        <div class="rate"><span>Half day (9-1 or 1-5)</span><span>$30</span></div>
+        <div class="rate"><span>Full day</span><span>$45</span></div>
+        <div class="rate"><span>2 / 3 / 4 days</span><span>$80 / $120 / $160</span></div>
+        <div class="rate"><span>5 / 6 / 7 days</span><span>$200 / $240 / $280</span></div>
+        <h4>Single items, per day</h4>
+        <div class="rate"><span>Umbrella</span><span>$30</span></div>
+        <div class="rate"><span>Chair</span><span>$15</span></div>
+        <div class="rate"><span>Table</span><span>$10</span></div>
+        <h4>Water gear</h4>
+        <div class="rate"><span>Boogie board</span><span>$8/hr, $20/day</span></div>
+        <div class="rate"><span>Kayak, single / double</span><span>$20 / $25 per hr</span></div>
+        <div class="rate"><span>Paddleboard</span><span>$35/hr, $100/4hr, $180/day</span></div>
+        <p class="brnote">More at beachingdestin.com. Prices may change, so confirm with the attendant.</p>
+      </div>
+      <div class="brimg">
+        <img src="beach-rental-stall.jpg" alt="Sun, Sand and Sea beach rental and shave ice stall at the private beach access">
+        <img src="beach-rental-rates.jpg" alt="Sun, Sand and Sea Beach Service printed rental rate sheet">
+      </div>
+    </div>
+  </div>
+  </details>
 </section>
 
 <!-- ================= RESTAURANTS ================= -->
 <section class="wrap" id="eat">
-  <div class="sec-head"><span class="sec-num">02</span><h2>Where to Eat</h2></div>
-  <p class="sec-sub">Ten of the highest-rated tables in Destin, from dockside fish shacks to white-tablecloth date nights. Most fill up fast in season, so go early or reserve where you can.</p>
+  <details class="accordion">
+    <summary><span class="acc-icon">🍽</span><span class="sec-num">02</span><div class="sec-head"><h2>Where to Eat</h2><div class="summary-desc">Ten of the highest-rated restaurants in Destin, from dockside fish shacks to white-tablecloth date nights.</div></div></summary>
   <div class="grid">
 
     <div class="card">
@@ -333,7 +475,8 @@
       <div class="meta"><span class="stars">★ 4.7</span><span class="dot"></span>5,700+ reviews</div>
       <p>Fresh-off-the-boat seafood with a rooftop SkyBar overlooking the marina. Lively, polished, great service.</p>
       <span class="pick"><b>Try:</b> baked oysters · fried grouper sandwich · lobster mac</span>
-      <span class="cphone"><span class="ph">(850) 659-3549</span></span>
+            <span class="price">Approx price: $$–$$$ · seafood entrées commonly mid-range to premium</span>
+<span class="cphone"><span class="ph">(850) 659-3549</span></span>
     </div>
 
     <div class="card">
@@ -341,7 +484,8 @@
       <div class="meta"><span class="stars">★ 4.5</span><span class="dot"></span>9,100+ reviews</div>
       <p>A harborfront favorite for oysters three ways and beautifully plated Gulf fish. A local's pick for a special dinner.</p>
       <span class="pick"><b>Try:</b> oysters Bienville · Snapper Destin · crab dip</span>
-      <span class="cphone"><span class="ph">(850) 424-7406</span></span>
+            <span class="price">Approx price: $$–$$$ · popular dinner spot; expect peak-season waits</span>
+<span class="cphone"><span class="ph">(850) 424-7406</span></span>
     </div>
 
     <div class="card">
@@ -349,7 +493,8 @@
       <div class="meta"><span class="stars">★ 4.5</span><span class="dot"></span>4,500+ reviews</div>
       <p>Order at the counter, eat at picnic tables on the dock over the bay. Unpretentious and the freshest catch in town.</p>
       <span class="pick"><b>Try:</b> royal red shrimp · fresh catch · smoked tuna dip</span>
-      <span class="cphone"><span class="ph">(850) 837-7575</span></span>
+            <span class="price">Approx price: $$ · casual counter-service seafood</span>
+<span class="cphone"><span class="ph">(850) 837-7575</span></span>
     </div>
 
     <div class="card">
@@ -357,7 +502,8 @@
       <div class="meta"><span class="stars">★ 4.5</span><span class="dot"></span>5,900+ reviews</div>
       <p>Caught fish on a charter? Bring it here and they'll cook it your way. Otherwise, the steamer pots and boils are stellar.</p>
       <span class="pick"><b>Try:</b> Hook &amp; Cook your catch · seafood boil · all-you-can-eat crab</span>
-      <span class="cphone"><span class="ph">(850) 460-8900</span></span>
+            <span class="price">Approx price: $$–$$$ · boils/steamer pots cost more than sandwiches</span>
+<span class="cphone"><span class="ph">(850) 460-8900</span></span>
     </div>
 
     <div class="card">
@@ -365,7 +511,8 @@
       <div class="meta"><span class="stars">★ 4.7</span><span class="dot"></span>3,100+ reviews</div>
       <p>Sunset-view Creole cooking with old-school service. No reservations, so arrive early. Dinner only, from 4pm.</p>
       <span class="pick"><b>Try:</b> jambalaya · blackened shrimp · key lime pie</span>
-      <span class="cphone"><span class="ph">(850) 837-0881</span></span>
+            <span class="price">Approx price: $$$ · dinner-only waterfront dining</span>
+<span class="cphone"><span class="ph">(850) 837-0881</span></span>
     </div>
 
     <div class="card">
@@ -373,7 +520,8 @@
       <div class="meta"><span class="stars">★ 4.5</span><span class="dot"></span>12,000+ reviews</div>
       <p>Destin's original beachfront seafood joint. Toes-in-the-sand views, award-winning gumbo, and a great happy hour.</p>
       <span class="pick"><b>Try:</b> seafood gumbo · oyster po'boy · blackened grouper</span>
-      <span class="cphone"><span class="ph">(850) 837-2022</span></span>
+            <span class="price">Approx price: $$ · casual beachfront seafood</span>
+<span class="cphone"><span class="ph">(850) 837-2022</span></span>
     </div>
 
     <div class="card">
@@ -381,7 +529,8 @@
       <div class="meta"><span class="stars">★ 4.4</span><span class="dot"></span>8,500+ reviews</div>
       <p>Bright, nautical, and right on the sand with a window-seat view the length of the room. Easy choice for groups.</p>
       <span class="pick"><b>Try:</b> grilled grouper + lump crab · coconut shrimp · margarita bucket</span>
-      <span class="cphone"><span class="ph">(850) 837-2224</span></span>
+            <span class="price">Approx price: $$ · beachfront casual dining</span>
+<span class="cphone"><span class="ph">(850) 837-2224</span></span>
     </div>
 
     <div class="card">
@@ -389,7 +538,8 @@
       <div class="meta"><span class="stars">★ 4.7</span><span class="dot"></span>34,000+ reviews</div>
       <p>A Destin institution that's loud, fun, and home to Gator Beach downstairs. The kids will be entertained start to finish.</p>
       <span class="pick"><b>Try:</b> fried gator tail · blackened redfish · the famous gift shop</span>
-      <span class="cphone"><span class="ph">(850) 654-4200</span></span>
+            <span class="price">Approx price: $$ · family casual</span>
+<span class="cphone"><span class="ph">(850) 654-4200</span></span>
     </div>
 
     <div class="card">
@@ -397,7 +547,8 @@
       <div class="meta"><span class="stars">★ 4.4</span><span class="dot"></span>640+ reviews</div>
       <p>The grown-up splurge. Tableside Chateaubriand, a huge wine list, and white-glove service in Sandestin. Reserve ahead; resort dress code.</p>
       <span class="pick"><b>Try:</b> Chateaubriand for two · bone-in ribeye · Bananas Foster tableside</span>
-      <span class="cphone"><span class="ph">(850) 622-1500</span></span>
+            <span class="price">Approx price: $$$$ · special-occasion dining</span>
+<span class="cphone"><span class="ph">(850) 622-1500</span></span>
     </div>
 
     <div class="card">
@@ -405,16 +556,19 @@
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>7,000+ reviews</div>
       <p>The best breakfast and brunch around, with gorgeous plates and theatrical table-side coffee. Worth the short drive to Miramar Beach.</p>
       <span class="pick"><b>Try:</b> chicken &amp; waffles · berry pancakes · Japanese pour-over · <i>(also great: Crackings & Ruby Slipper in Destin)</i></span>
-      <span class="cphone"><span class="nm">Bistrology</span> <span class="ph">(850) 757-7374</span> &#183; <span class="nm">Crackings</span> <span class="ph">(850) 650-0499</span> &#183; <span class="nm">Ruby Slipper</span> <span class="ph">(850) 660-7100</span></span>
+            <span class="price">Approx price: $$ · brunch plates and specialty coffee</span>
+<span class="cphone"><span class="nm">Bistrology</span> <span class="ph">(850) 757-7374</span> &#183; <span class="nm">Crackings</span> <span class="ph">(850) 650-0499</span> &#183; <span class="nm">Ruby Slipper</span> <span class="ph">(850) 660-7100</span></span>
     </div>
 
   </div>
+
+  </details>
 </section>
 
 <!-- ================= ACTIVITIES ================= -->
 <section class="wrap" id="do">
-  <div class="sec-head"><span class="sec-num">03</span><h2>On the Water & Outdoors</h2></div>
-  <p class="sec-sub">Destin is built around the Gulf and the harbor. These ten adventures are the ones guests remember long after the tan fades. Booking ahead is smart in summer.</p>
+  <details class="accordion">
+    <summary><span class="acc-icon">⛵</span><span class="sec-num">03</span><div class="sec-head"><h2>On the Water & Outdoors</h2><div class="summary-desc">The best adventures on the Gulf and in the harbor, from dolphin cruises and Crab Island to fishing and snorkeling.</div></div></summary>
   <div class="grid">
 
     <div class="card span2">
@@ -422,7 +576,8 @@
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>1,700+ reviews</div>
       <p>A shallow, emerald sandbar just inside the pass where boats anchor, music plays, and floating food/drink vendors come to you. Rent a pontoon (with or without a captain) or hop a shuttle. It's the quintessential Destin afternoon. Bring water shoes, a float, and a cooler.</p>
       <span class="pick"><b>Tip:</b> go on a weekday morning for calmer water and fewer crowds</span>
-      <span class="cphone"><span class="nm">SunVenture</span> <span class="ph">(850) 424-6465</span> &#183; <span class="nm">Crab Island Tours</span> <span class="ph">(850) 803-5466</span></span>
+            <span class="price">Approx price: shuttle seats from about $39; pontoons commonly $250+ before fees/fuel</span>
+<span class="cphone"><span class="nm">SunVenture</span> <span class="ph">(850) 424-6465</span> &#183; <span class="nm">Crab Island Tours</span> <span class="ph">(850) 803-5466</span></span>
     </div>
 
     <div class="card">
@@ -430,7 +585,8 @@
       <div class="meta"><span class="stars">★ 4.8–4.9</span><span class="dot"></span>thousands of reviews</div>
       <p>Pods of wild dolphins ride alongside the boat almost daily. <b>Southern Star</b> (glass-bottom, two decks) and <b>Destin Dolphin Cruise</b> are top-rated; sunset sailings are magic.</p>
       <span class="pick"><b>Best for:</b> first-timers, families, romantic evenings</span>
-      <span class="cphone"><span class="nm">Southern Star</span> <span class="ph">(850) 837-7741</span> &#183; <span class="nm">Destin Dolphin</span> <span class="ph">(850) 200-2260</span></span>
+            <span class="price">Approx price: commonly about $30–$50/person depending on time and vendor</span>
+<span class="cphone"><span class="nm">Southern Star</span> <span class="ph">(850) 837-7741</span> &#183; <span class="nm">Destin Dolphin</span> <span class="ph">(850) 200-2260</span></span>
     </div>
 
     <div class="card">
@@ -438,7 +594,8 @@
       <div class="meta"><span class="stars">★ 5.0</span><span class="dot"></span>top crews</div>
       <p>Book a private boat for snapper, grouper, mahi and more. <b>Charter Boat Backlash</b>, <b>O Sea D</b>, and <b>Pelican Adventures</b> get rave reviews and are great with kids.</p>
       <span class="pick"><b>Bonus:</b> have your catch cooked at Brotula's that night</span>
-      <span class="cphone"><span class="nm">Backlash</span> <span class="ph">(850) 685-9368</span> &#183; <span class="nm">O Sea D</span> <span class="ph">(850) 255-2967</span> &#183; <span class="nm">Pelican</span> <span class="ph">(850) 650-3825</span></span>
+            <span class="price">Approx price: usually $$$–$$$$ private charter; varies heavily by hours/boat size</span>
+<span class="cphone"><span class="nm">Backlash</span> <span class="ph">(850) 685-9368</span> &#183; <span class="nm">O Sea D</span> <span class="ph">(850) 255-2967</span> &#183; <span class="nm">Pelican</span> <span class="ph">(850) 650-3825</span></span>
     </div>
 
     <div class="card">
@@ -446,7 +603,8 @@
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>2,400+ reviews</div>
       <p>The <b>Destin Princess & Destiny</b> share-the-boat trips are an affordable, no-experience-needed way to fish the Gulf. Deckhands bait, untangle, and clean your catch.</p>
       <span class="pick"><b>Best for:</b> families &amp; first-time anglers</span>
-      <span class="cphone"><span class="nm">Destin Princess & Destiny</span> <span class="ph">(850) 837-5088</span></span>
+            <span class="price">Approx price: usually $$ per person; more budget-friendly than private charter</span>
+<span class="cphone"><span class="nm">Destin Princess & Destiny</span> <span class="ph">(850) 837-5088</span></span>
     </div>
 
     <div class="card">
@@ -454,7 +612,8 @@
       <div class="meta"><span class="stars">★ 4.9</span><span class="dot"></span>5,600+ reviews</div>
       <p>Soar 400+ feet above that famous emerald water. <b>Pelican Adventures</b> and <b>AJ's Water Adventures</b> run smooth, safety-first flights from the harbor.</p>
       <span class="pick"><b>Best for:</b> couples, teens, anyone craving the view</span>
-      <span class="cphone"><span class="nm">Pelican</span> <span class="ph">(850) 650-3825</span> &#183; <span class="nm">AJ's</span> <span class="ph">(850) 837-2222</span></span>
+            <span class="price">Approx price: often around $70–$100/person; photos/observers may cost extra</span>
+<span class="cphone"><span class="nm">Pelican</span> <span class="ph">(850) 650-3825</span> &#183; <span class="nm">AJ's</span> <span class="ph">(850) 837-2222</span></span>
     </div>
 
     <div class="card">
@@ -462,7 +621,8 @@
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>harbor rentals</div>
       <p>Rent from <b>AJ's</b> or <b>HarborWalk Adventures</b> and explore the calm bay side. Paddleboarding the flats at sunrise is a local secret.</p>
       <span class="pick"><b>Best for:</b> active mornings, calmer water</span>
-      <span class="cphone"><span class="nm">AJ's</span> <span class="ph">(850) 837-2222</span> &#183; <span class="nm">HarborWalk Adv.</span> <span class="ph">(850) 786-2732</span></span>
+            <span class="price">Approx price: rentals commonly hourly/half-day; compare vendor rates before booking</span>
+<span class="cphone"><span class="nm">AJ's</span> <span class="ph">(850) 837-2222</span> &#183; <span class="nm">HarborWalk Adv.</span> <span class="ph">(850) 786-2732</span></span>
     </div>
 
     <div class="card">
@@ -470,7 +630,8 @@
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>1,300+ reviews</div>
       <p>The <b>Sea Blaster</b> and SunVenture cruises mix dolphins, drinks, music and a Gulf sunset. Feed the seagulls on the way out of the harbor.</p>
       <span class="pick"><b>Tip:</b> bring a layer, since evenings are breezy on the water</span>
-      <span class="cphone"><span class="nm">Sea Blaster</span> <span class="ph">(850) 654-6888</span> &#183; <span class="nm">SunVenture</span> <span class="ph">(850) 424-6465</span></span>
+            <span class="price">Approx price: usually $$ per person; sunset times may price higher</span>
+<span class="cphone"><span class="nm">Sea Blaster</span> <span class="ph">(850) 654-6888</span> &#183; <span class="nm">SunVenture</span> <span class="ph">(850) 424-6465</span></span>
     </div>
 
     <div class="card">
@@ -478,7 +639,8 @@
       <div class="meta"><span class="stars">★ 4.9</span><span class="dot"></span>4,200+ reviews</div>
       <p>A fully-costumed pirate crew, water-cannon battles, treasure hauled from the bay, and deck-swabbing. Genuinely fun for adults too.</p>
       <span class="pick"><b>Best for:</b> families with little ones · bring tip money</span>
-      <span class="cphone"><span class="ph">(850) 269-0896</span></span>
+            <span class="price">Approx price: usually $$ per person; check child pricing</span>
+<span class="cphone"><span class="ph">(850) 269-0896</span></span>
     </div>
 
     <div class="card">
@@ -486,7 +648,8 @@
       <div class="meta"><span class="stars">&#9733; 4.8</span><span class="dot"></span>guided trips</div>
       <p>Several cruises add a snorkel stop near the jetties, in calm, clear water where you'll spot fish, rays, and the occasional sea turtle. A gentle option for families.</p>
       <span class="pick"><b>Best for:</b> first-time snorkelers &amp; little explorers</span>
-      <span class="cphone"><span class="nm">AJ's</span> <span class="ph">(850) 837-2222</span> &#183; <span class="nm">Crab Island Tours</span> <span class="ph">(850) 803-5466</span></span>
+            <span class="price">Approx price: guided tours commonly $$ per person</span>
+<span class="cphone"><span class="nm">AJ's</span> <span class="ph">(850) 837-2222</span> &#183; <span class="nm">Crab Island Tours</span> <span class="ph">(850) 803-5466</span></span>
     </div>
 
     <div class="card">
@@ -494,16 +657,19 @@
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>8,800+ reviews</div>
       <p>Protected dunes, the whitest sand on the coast, a nature trail, showers and pavilions. Just $6 to park, with in-and-out access. A quieter alternative to the busy public beach.</p>
       <span class="pick"><b>Best for:</b> a relaxed, less-crowded beach day</span>
-      <span class="cphone"><span class="ph">(850) 837-7550</span></span>
+            <span class="price">Approx price: about $6 per vehicle for park entry</span>
+<span class="cphone"><span class="ph">(850) 837-7550</span></span>
     </div>
 
   </div>
+
+  </details>
 </section>
 
 <!-- ================= THINGS TO DO ================= -->
 <section class="wrap" id="family">
-  <div class="sec-head"><span class="sec-num">04</span><h2>For Adults & Kids</h2></div>
-  <p class="sec-sub">Land-based fun, rainy-day backups, and spots that work whether you've got toddlers or grandparents in tow.</p>
+  <details class="accordion">
+    <summary><span class="acc-icon">👨‍👩‍👧</span><span class="sec-num">04</span><div class="sec-head"><h2>For Adults & Kids</h2><div class="summary-desc">Attractions, mini golf, arcades, shows and kid-friendly fun for all ages.</div></div></summary>
   <div class="grid">
 
     <div class="card">
@@ -511,7 +677,8 @@
       <div class="meta"><span class="stars">★ 4.5</span><span class="dot"></span>7,700+ reviews</div>
       <p>The waterfront hub for shops, restaurants, live music, boat-tour booking, and seasonal fireworks. Note that many vendors close in deep winter.</p>
       <span class="pick"><b>Best for:</b> evening strolls, sunset, people-watching</span>
-      <span class="cphone"><span class="ph">(888) 965-7092</span></span>
+            <span class="price">Approx price: free to stroll; paid parking/activities/food extra</span>
+<span class="cphone"><span class="ph">(888) 965-7092</span></span>
     </div>
 
     <div class="card">
@@ -519,7 +686,8 @@
       <div class="meta"><span class="stars">★ 4.6</span><span class="dot"></span>4,200+ reviews</div>
       <p>100+ alligators you can watch, feed (cane poles, a few dollars), and even hold a baby for a photo. A fun, quick 45-minute stop.</p>
       <span class="pick"><b>Best for:</b> curious kids · the free evening feeding show</span>
-      <span class="cphone"><span class="ph">(850) 654-4200</span></span>
+            <span class="price">Approx price: free to view; feeding/photo experiences cost extra</span>
+<span class="cphone"><span class="ph">(850) 654-4200</span></span>
     </div>
 
     <div class="card">
@@ -527,7 +695,8 @@
       <div class="meta"><span class="stars">★ 4.3</span><span class="dot"></span>6,100+ reviews</div>
       <p>Multi-level go-kart tracks, mini-golf, bumper boats, kiddie rides and an arcade. A reliable hit when everyone needs a break from the sand.</p>
       <span class="pick"><b>Best for:</b> a chilly or rainy afternoon</span>
-      <span class="cphone"><span class="ph">(850) 654-4668</span></span>
+            <span class="price">Approx price: pay-per-attraction or points card; budget $$ for a family visit</span>
+<span class="cphone"><span class="ph">(850) 654-4668</span></span>
     </div>
 
     <div class="card">
@@ -535,7 +704,8 @@
       <div class="meta"><span class="stars">★ 4.4</span><span class="dot"></span>9,300+ reviews</div>
       <p>Dolphin and sea-lion shows, manatees, sea-turtle rehab, and animal encounters. About 25 min west on Okaloosa Island; ~2–3 hours to explore.</p>
       <span class="pick"><b>Best for:</b> all ages · animal lovers</span>
-      <span class="cphone"><span class="ph">(850) 243-9046</span></span>
+            <span class="price">Approx price: ticketed aquarium; encounters cost extra</span>
+<span class="cphone"><span class="ph">(850) 243-9046</span></span>
     </div>
 
     <div class="card">
@@ -543,7 +713,8 @@
       <div class="meta"><span class="stars">★ 3.9</span><span class="dot"></span>seasonal · check hours</div>
       <p>Slides, a lazy river and wave pool. Fun on a hot day, but it's seasonal and reviews are mixed on staffing and closures, so check what's open before you go.</p>
       <span class="pick"><b>Best for:</b> peak-summer thrill-seeking kids</span>
-      <span class="cphone"><span class="ph">(850) 837-8319</span></span>
+            <span class="price">Approx price: promotional 1-day tickets seen around $39.99; check current hours/closures</span>
+<span class="cphone"><span class="ph">(850) 837-8319</span></span>
     </div>
 
     <div class="card">
@@ -551,7 +722,8 @@
       <div class="meta"><span class="stars">★ 4.6</span><span class="dot"></span>8,400+ reviews</div>
       <p>Open-air shopping with an AMC theater, a kids' play area and grassy green. The go-to when the weather turns.</p>
       <span class="pick"><b>Best for:</b> rainy days · teens · a slower afternoon</span>
-      <span class="cphone"><span class="ph">(850) 337-8700</span></span>
+            <span class="price">Approx price: free to walk; shopping, movies, and food extra</span>
+<span class="cphone"><span class="ph">(850) 337-8700</span></span>
     </div>
 
     <div class="card">
@@ -559,7 +731,8 @@
       <div class="meta"><span class="stars">★ 4.7</span><span class="dot"></span>430+ reviews</div>
       <p>The story of the "World's Luckiest Fishing Village," with a kids' interactive area and scavenger hunt. Small, charming, and inexpensive. Closed Sun/Mon.</p>
       <span class="pick"><b>Best for:</b> curious kids · a quick cultural stop</span>
-      <span class="cphone"><span class="ph">(850) 837-6611</span></span>
+            <span class="price">Approx price: low-cost museum admission; check current hours</span>
+<span class="cphone"><span class="ph">(850) 837-6611</span></span>
     </div>
 
     <div class="card">
@@ -567,7 +740,8 @@
       <div class="meta"><span class="stars">★ 4.3</span><span class="dot"></span>2,200+ reviews</div>
       <p>Animatronic-dinosaur mini-golf, ropes course, laser tag, go-karts and arcade in Fort Walton Beach. Great big-group rainy-day plan.</p>
       <span class="pick"><b>Best for:</b> mixed-age groups · evenings</span>
-      <span class="cphone"><span class="ph">(850) 400-3300</span></span>
+            <span class="price">Approx price: pay-per-attraction or package; budget $$ per person</span>
+<span class="cphone"><span class="ph">(850) 400-3300</span></span>
     </div>
 
     <div class="card">
@@ -575,23 +749,27 @@
       <div class="meta"><span class="stars">★ 4.8</span><span class="dot"></span>800+ reviews</div>
       <p>Zipline and a Soaring Eagle ride right over the harbor, plus rides for younger kids. A fun add-on before or after dinner on the boardwalk.</p>
       <span class="pick"><b>Best for:</b> a quick thrill with a view</span>
-      <span class="cphone"><span class="ph">(850) 786-2732</span></span>
+            <span class="price">Approx price: zipline/ride pricing varies; check HarborWalk kiosk/site</span>
+<span class="cphone"><span class="ph">(850) 786-2732</span></span>
     </div>
 
     <div class="card span2">
       <div class="top"><h3>A Day on "Your" Beach (the main event)</h3><span class="pill">Free · steps away</span></div>
       <p>Don't overschedule. The single best thing to do in Destin is the simplest: a slow beach day on the sugar-white sand outside your door. Build sandcastles, hunt for shells, swim in the warm Gulf, and watch a sunset you'll talk about for years. Bring an umbrella for shade, since the midday sun is strong.</p>
       <span class="pick"><b>Tip:</b> mornings have calmer surf and the parking/sand to yourself</span>
-      <span class="cphone"><span class="nm">Beach gear:</span> rent right at the Private Beach Access store, or message Dru via Airbnb / VRBO chat</span>
+            <span class="price">Approx price: free beach access; chair/umbrella rentals extra</span>
+<span class="cphone"><span class="nm">Beach gear:</span> rent on-site from Sun, Sand &amp; Sea at the private beach access (rates in Getting Settled)</span>
     </div>
 
   </div>
+
+  </details>
 </section>
 
 <!-- ================= STOCK UP NEARBY ================= -->
 <section class="wrap" id="stores">
-  <div class="sec-head"><span class="sec-num">05</span><h2>Stock Up Nearby</h2></div>
-  <p class="sec-sub">Groceries, beach gear, pizza delivery, coffee, and ice cream, most just a few minutes west toward Destin Commons. Distances are approximate driving times from Elemental Oasis.</p>
+  <details class="accordion">
+    <summary><span class="acc-icon">🛒</span><span class="sec-num">05</span><div class="sec-head"><h2>Stock Up Nearby</h2><div class="summary-desc">Groceries, beach gear, pharmacy, and everything else you need, all close to home.</div></div></summary>
   <div class="storewrap">
 
     <div class="storebox feature">
@@ -600,16 +778,19 @@
       <div class="store">
         <div class="sname">Publix at Paradise Key <span class="tag">closest grocery</span></div>
         <div class="smeta">4425 Commons Dr E · ~2.5 mi · 7am–10pm daily · full deli, bakery &amp; pharmacy</div>
+        <div class="smeta"><b>Price note:</b> grocery prices generally higher than Walmart; best convenience option.</div>
         <div class="sphone">(850) 837-9094</div>
       </div>
       <div class="store">
         <div class="sname">Walmart Supercenter</div>
         <div class="smeta">Emerald Coast Pkwy · ~5 mi · 6am–midnight · cheapest one-stop for food + beach gear</div>
+        <div class="smeta"><b>Price note:</b> usually the lower-cost one-stop option for groceries and beach basics.</div>
         <div class="sphone">(850) 650-0341</div>
       </div>
       <div class="store">
         <div class="sname">Winn-Dixie (Miramar Beach)</div>
         <div class="smeta">65 Poinciana Blvd · ~9 mi east · 7am–10pm · has a beach-supply aisle (chairs, towels, sand toys)</div>
+        <div class="smeta"><b>Price note:</b> good backup for groceries and basic beach supplies.</div>
         <div class="sphone">(850) 650-2139</div>
       </div>
     </div>
@@ -620,15 +801,22 @@
       <div class="store">
         <div class="sname">Alvin's Island <span class="tag">beach superstore</span></div>
         <div class="smeta">34888 Emerald Coast Pkwy · ~2.5 mi · 8am–midnight · floats, chairs, umbrellas, swimsuits, sand toys &amp; souvenirs</div>
+        <div class="smeta"><b>Price note:</b> convenient beach gear/souvenirs; compare rental vs buying.</div>
       </div>
       <div class="store">
         <div class="sname">Walgreens (across from Destin Commons)</div>
         <div class="smeta">34909 Emerald Coast Pkwy · ~2.5 mi · 7am–10pm · pharmacy, sunscreen, aloe, convenience items</div>
+        <div class="smeta"><b>Price note:</b> convenient for pharmacy/OTC items; not usually cheapest for beach gear.</div>
         <div class="sphone">(850) 654-7291</div>
       </div>
       <div class="store">
-        <div class="sname">Tip: rent, don't buy</div>
-        <div class="smeta">For chairs and umbrella setup right on the sand, beach-service companies deliver and set up daily. Message Dru and we'll point you to the one serving our beach.</div>
+        <div class="sname">Walmart Supercenter (Destin)</div>
+        <div class="smeta">15017 Emerald Coast Pkwy · ~5 mi · beach chairs, towels, coolers, sunscreen, OTC items, snacks &amp; basic pharmacy needs</div>
+        <div class="sphone">(850) 650-0341</div>
+      </div>
+      <div class="store">
+        <div class="sname">On-site beach rentals</div>
+        <div class="smeta">Sun, Sand &amp; Sea Beach Service rents chairs, umbrellas, boogie boards, kayaks, and paddleboards right at your private beach access, and also sells shave ice. Full rates are in the Getting Settled section.</div>
       </div>
     </div>
 
@@ -638,16 +826,19 @@
       <div class="store">
         <div class="sname">Merlin's Pizza <span class="tag">★ 4.7 · top pick</span></div>
         <div class="smeta">Delivers · 11am–11pm daily · local favorite, creative pies</div>
+        <div class="smeta"><b>Approx price:</b> $$ · delivery fees may vary by app.</div>
         <div class="sphone">(850) 650-3000</div>
       </div>
       <div class="store">
         <div class="sname">Jet's Pizza</div>
         <div class="smeta">Delivers · Detroit-style · near Destin Commons (delivery can run slow on busy nights)</div>
+        <div class="smeta"><b>Approx price:</b> $$ · delivery fees may vary by app.</div>
         <div class="sphone">(850) 654-5387</div>
       </div>
       <div class="store">
         <div class="sname">Graffiti Pizza · Vinny McGuire's</div>
         <div class="smeta">Great for takeout or dine-in. Graffiti (Destin Commons) 4.4 · Vinny McGuire's NY-style (harbor) 4.7</div>
+        <div class="smeta"><b>Approx price:</b> $$ · good takeout options.</div>
       </div>
     </div>
 
@@ -657,14 +848,17 @@
       <div class="store">
         <div class="sname">Sandos Beachside Café <span class="tag">closest · walkable</span></div>
         <div class="smeta">36 Terra Cotta Way · ~5 min · ★ 4.9 · coffee + big sandwiches, rooftop tiki bar at night</div>
+        <div class="smeta"><b>Approx price:</b> $$ · walkable coffee/sandwich option.</div>
       </div>
       <div class="store">
         <div class="sname">Maas Coffee Roasters</div>
         <div class="smeta">~4 mi · ★ 4.7 · local roaster, cozy, house bakery &amp; board games</div>
+        <div class="smeta"><b>Approx price:</b> $–$$ · coffee and bakery items.</div>
       </div>
       <div class="store">
         <div class="sname">Merveilleuse Crêpe & Coffee</div>
         <div class="smeta">~3 mi · ★ 4.9 · European-style crêpes + great espresso</div>
+        <div class="smeta"><b>Approx price:</b> $–$$ · crêpes and espresso.</div>
       </div>
     </div>
 
@@ -676,32 +870,38 @@
           <div class="store" style="border-top:none;">
             <div class="sname">Frozen Bloom Creamery & Coffee <span class="tag">★ 5.0</span></div>
             <div class="smeta">34940 Emerald Coast Pkwy · ~2.5 mi · 11am–11pm · small-batch homemade ice cream &amp; sorbet</div>
+        <div class="smeta"><b>Approx price:</b> $–$$ · small-batch ice cream.</div>
           </div>
           <div class="store">
             <div class="sname">Ice Cream Shoppe, Destin East</div>
             <div class="smeta">34896 Emerald Coast Pkwy · ~2.5 mi · ★ 4.8 · big flavor wall + house fudge</div>
+        <div class="smeta"><b>Approx price:</b> $–$$ · ice cream/fudge.</div>
           </div>
         </div>
         <div>
           <div class="store" style="border-top:none;">
             <div class="sname">Ice Cream Shoppe on US-98</div>
             <div class="smeta">870 US-98 E · ~6 mi · ★ 4.8 · the original location, open till 11pm</div>
+        <div class="smeta"><b>Approx price:</b> $–$$ · ice cream/fudge.</div>
           </div>
           <div class="store">
             <div class="sname">The Yard Milkshake Bar</div>
             <div class="smeta">Destin Commons · over-the-top loaded shakes (fun but pricey; ★ 3.8, go for the spectacle)</div>
+        <div class="smeta"><b>Approx price:</b> $$ · premium loaded shakes.</div>
           </div>
         </div>
       </div>
     </div>
 
   </div>
+
+  </details>
 </section>
 
 
 <section class="wrap" id="seasons">
-  <div class="sec-head"><span class="sec-num">06</span><h2>What's Best by Season</h2></div>
-  <p class="sec-sub">Destin is a year-round destination, but each season has its own rhythm. Here's how to make the most of whenever you're visiting.</p>
+  <details class="accordion">
+    <summary><span class="acc-icon">☼</span><span class="sec-num">06</span><div class="sec-head"><h2>Season-by-Season</h2><div class="summary-desc">What to expect in Destin all year long, plus our favorite times to visit.</div></div></summary>
   <div class="seasons">
 
     <div class="season s-spring">
@@ -753,6 +953,7 @@
     </div>
 
   </div>
+  </details>
 </section>
 
 <!-- ================= TIPS ================= -->
@@ -761,12 +962,13 @@
 
   <div class="flagkey">
     <h3>Beach Flag Guide</h3>
-    <p class="flagsub">Check the flag flying at the lifeguard stand before you get in the water.</p>
+    <p class="flagsub">Beach conditions can change fast, and lifeguards may not be on duty. Always check the day's flag warning before you swim.</p>
     <div class="flagrow"><span class="flag green"></span><div class="ft"><b>Green</b><span>Calm water. Swim with normal care.</span></div></div>
     <div class="flagrow"><span class="flag yellow"></span><div class="ft"><b>Yellow</b><span>Moderate surf or currents. Use caution.</span></div></div>
     <div class="flagrow"><span class="flag red"></span><div class="ft"><b>Red</b><span>High hazard. Strong surf and rip currents.</span></div></div>
     <div class="flagrow"><span class="flag dred"><i></i><i></i></span><div class="ft"><b>Double Red</b><span>Water closed to the public. Stay out.</span></div></div>
     <div class="flagrow"><span class="flag purple"></span><div class="ft"><b>Purple</b><span>Dangerous marine life, such as jellyfish.</span></div></div>
+    <p class="flagsub" style="margin-top:16px;margin-bottom:0;">Check the current Destin beach flag warning before you head out at <a href="https://destinmiramar.com/weather/" target="_blank" rel="noopener" style="color:var(--coral);font-weight:700;">destinmiramar.com/weather</a>.</p>
   </div>
 
   <div class="tips">
@@ -780,10 +982,12 @@
   </div>
 </section>
 
+
+
 <footer>
   <div class="wrap">
     <div class="mark">Enjoy your stay at Elemental Oasis</div>
-    <p style="margin-bottom:8px;">Questions or need a hand? Contact <b style="color:var(--coral);">Dru</b> via Airbnb or VRBO chat for more information.</p>
+    <p style="margin-bottom:8px;">Questions or need a hand? Contact <b style="color:var(--coral);">Dru</b> at <b style="color:var(--coral);">562-528-6964</b> or via Airbnb / VRBO chat for more information.</p>
     <p>Ratings and details reflect publicly available reviews at the time of writing and can change, so please confirm hours, prices, and seasonal openings before you go.</p>
   </div>
 </footer>
