@@ -317,7 +317,7 @@
   .tip.thanks h4{color:var(--coral);font-size:1.95rem;line-height:1.15;margin-bottom:6px;}
   .tip.thanks .heart{font-size:1.3em;}
   .tip.thanks p{font-size:1.12rem;color:#eaf5f2;}
-  @media screen and (max-width:760px){.brimg{grid-template-columns:1fr;}}
+  @media screen and (max-width:520px){.brimg{grid-template-columns:1fr;}}
 
   /* ---------- BEACH RULES ---------- */
   .rules{background:var(--paper);border:1px solid var(--line);border-top:5px solid var(--emerald);border-radius:16px;padding:24px 26px 20px;margin-top:16px;}
